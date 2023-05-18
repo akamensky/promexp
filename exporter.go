@@ -1,4 +1,4 @@
-package prommetric
+package promexp
 
 import (
 	"sort"

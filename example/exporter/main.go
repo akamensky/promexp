@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	prommetric.DefaultExpiration = time.Second * 10
-	prommetric.DefaultInterval = time.Second * 1
-	e := prommetric.NewExporter()
+	promexp.DefaultExpiration = time.Second * 10
+	promexp.DefaultInterval = time.Second * 1
+	e := promexp.NewExporter()
 	e.SetGauge("one_off_should_disappear", 1, "a metric that should disappear soon", map[string]string{"lbl": "val"})
 	go func() {
 		for true {
