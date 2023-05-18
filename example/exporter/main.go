@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/akamensky/prommetric"
+	"github.com/akamensky/promexp"
 	"log"
 	"net/http"
 	"time"
